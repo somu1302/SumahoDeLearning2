@@ -11,11 +11,6 @@
 </head>
 
 <body>
-  <Files ~ "\.(js|css)$">
-    Header set Pragma no-cache
-    Header set Cache-Control no-cache
-    Header set Expires "Thu, 01 Dec 1994 16:00:00 GMT"
-  </Files>
   <div id="unity-container">
     <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
     <div id="unity-loading-bar">
@@ -106,6 +101,11 @@
     };
     document.body.appendChild(script);
   </script>
+  <Files ~ "\.(js|css)$">
+    Header set Pragma no-cache
+    Header set Cache-Control no-cache
+    Header set Expires "Thu, 01 Dec 1994 16:00:00 GMT"
+  </Files>
 </body>
 
 </html>
